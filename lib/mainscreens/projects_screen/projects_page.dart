@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:robosoc/utilities/project_provider.dart';
 import 'package:robosoc/mainscreens/projects_screen/detailed_project_viewscreen.dart';
-import 'package:robosoc/mainscreens/projects_screen/add_new_project_screen.dart';
 
 class ProjectsPage extends StatefulWidget {
   const ProjectsPage({Key? key}) : super(key: key);

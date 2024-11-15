@@ -111,13 +111,13 @@ class _NewProjectScreenState extends State<NewProjectScreen> {
         CircleAvatar(
           radius: 60,
           backgroundColor: Colors.grey[300],
-          child: _imageFile == null
-              ? Icon(Icons.add_photo_alternate, size: 40)
-              : null,
           backgroundImage: _imageFile != null
               ? (kIsWeb
                   ? NetworkImage(_imageFile.path)
                   : FileImage(_imageFile) as ImageProvider)
+              : null,
+          child: _imageFile == null
+              ? Icon(Icons.add_photo_alternate, size: 40)
               : null,
         ),
         Positioned(
