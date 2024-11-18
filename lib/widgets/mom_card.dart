@@ -5,7 +5,7 @@ import 'package:robosoc/models/mom.dart';
 class MomCard extends StatelessWidget {
   final Mom mom;
 
-  const MomCard({Key? key, required this.mom}) : super(key: key);
+  const MomCard({super.key, required this.mom});
 
   @override
   Widget build(BuildContext context) {

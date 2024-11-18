@@ -9,13 +9,13 @@ class MOMPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final FirebaseFirestore _firestore = FirebaseFirestore.instance;
+    final FirebaseFirestore firestore = FirebaseFirestore.instance;
 
     // Function to fetch MOM documents from Firestore and convert them to Mom objects
     Stream<List<Mom>> fetchMomList() {
-      return _firestore.collection('moms').snapshots().map((snapshot) =>
+      return firestore.collection('moms').snapshots().map((snapshot) =>
           snapshot.docs
-              .map((doc) => Mom.fromMap(doc.data() as Map<String, dynamic>, doc.id))
+              .map((doc) => Mom.fromMap(doc.data(), doc.id))
               .toList());
     }
 

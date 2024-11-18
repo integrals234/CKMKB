@@ -7,7 +7,7 @@ import 'package:robosoc/models/mom.dart';
 class MomForm extends StatefulWidget {
   final Mom? mom;
 
-  const MomForm({Key? key, this.mom}) : super(key: key);
+  const MomForm({super.key, this.mom});
 
   @override
   _MomFormState createState() => _MomFormState();
