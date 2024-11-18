@@ -1,4 +1,4 @@
-// ignore_for_file: use_super_parameters, library_private_types_in_public_api, use_build_context_synchronously, prefer_const_literals_to_create_immutables
+// ignore_for_file: use_super_parameters, library_private_types_in_public_api, use_build_context_synchronously, prefer_const_literals_to_create_immutables, unused_import
 
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
@@ -55,7 +55,13 @@ class _ProjectsPageState extends State<ProjectsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Projects'),
+        bottomOpacity: 2.0,
+        title: const Text(
+          'PROJECTS',
+          style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+        ),
+        elevation: 20,
+        shadowColor: Colors.black45,
       ),
       body: Consumer<ProjectProvider>(
         builder: (context, projectProvider, child) {

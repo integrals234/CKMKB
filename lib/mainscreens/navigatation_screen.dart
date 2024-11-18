@@ -1,3 +1,5 @@
+// ignore_for_file: unused_import
+
 import 'package:flutter/material.dart';
 import 'package:robosoc/mainscreens/homescreen/home_page.dart';
 import 'package:robosoc/mainscreens/issuehistory/issue_history.dart';
@@ -52,12 +54,12 @@ class _NavigationScreenState extends State<NavigationScreen> {
               ),
             );
           } else if (currentIndex == 1) {
-            // Navigator.push(
-            //   context,
-            //   MaterialPageRoute(
-            //     builder: (context) => NewProjectScreen(),
-            //   ),
-            // );
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => NewProjectScreen(),
+              ),
+            );
           }
         },
         backgroundColor: Colors.black,
